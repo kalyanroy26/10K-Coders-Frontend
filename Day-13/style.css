@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+.tag-title {
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+.tag-description {
+  color: #555;
+  margin-bottom: 20px;
+}
