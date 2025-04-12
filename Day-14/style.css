@@ -3,20 +3,43 @@
     padding: 0;
 }
 
-.first{
-    border: 5px solid #1b64ad;
-    height: 150px;
-    margin: 20px;
-    display: inline-block;
-    width: 400px;
-
+body{
+    background-color: #1DCD9F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.second{
-    border: 5px solid #1b1b1b;
-    height: 150px;
-    margin: 20px;
-    width: 400px;
-    display: inline-block;
-
+.logo{
+    text-align: center;
+    font-weight: 600;
+    color: #393E46;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 5px;
+    background-color: #ffff;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.card h4{
+    font-size: 20px;
+}
+
+.card img{
+    height: 200px;
+    width: 250px;
+    margin: 20px;
+}
+
