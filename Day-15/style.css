@@ -6,15 +6,17 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background-image: url('./floating-cogs.svg'); 
 }
 
 .container{
     margin: 20px 20% 20px 20%;
-    border: 1px solid #989696;
+    border: 2px solid #989696;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
-    
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
 }
 
 .profile-image{
