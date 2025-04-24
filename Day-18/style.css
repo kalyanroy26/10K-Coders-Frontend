@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container{
+    margin: 10px;
+    text-align: justify;
+}
+
+p,pre{
+    display: none;
+}
+
+pre{
+    text-align: left;
+}
+
+
+.sub > h1{
+    cursor: pointer;
+    margin: 10px;
+    color: #222222;
+}
+
+.sub > p{
+    color: #169976;
+}
+
+.sub > h1:hover ~ p,
+.sub > h1:hover ~ pre{
+    text-align: justify;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    display: block;
+}
