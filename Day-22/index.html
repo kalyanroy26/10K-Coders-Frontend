@@ -15,13 +15,13 @@
         .container{
             display: grid;
             height: 100vh;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(4,1fr);
             grid-template-areas: 
-            "A B B C"
-            "A E F G"
-            "D E F G"
-            "D H H G"
+            "A A A A A A A"
+            "B C D E E F F"
+            "B G G E E H I"
+            "J J J J J J J"
             ;
         }
 
@@ -66,6 +66,16 @@
 
         .item8{
             grid-area: H;
+            background-color:coral;
+        }
+
+        .item9{
+            grid-area: I;
+            background-color: #fff;
+        }
+        
+        .item10{
+            grid-area: J;
             background-color: darkcyan;
         }
 
@@ -82,6 +92,8 @@
         <div class="item item6"></div>
         <div class="item item7"></div>
         <div class="item item8"></div>
+        <div class="item item9"></div>
+        <div class="item item10"></div>
     </div>
 </body>
 </html>
