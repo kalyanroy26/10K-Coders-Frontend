@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "A B B C"
+            "A E F G"
+            "D E F G"
+            "D H H G"
+            ;
+        }
+
+        .item{
+            border: 5px solid #403e3c;
+        }
+
+        .item1{
+            grid-area: A;
+            background-color: #e01d48;
+        }
+
+        .item2{
+            grid-area: B;
+            background-color: #fff;
+        }
+
+        .item3{
+            grid-area: C;
+            background-color: #1b64ad;
+        }
+
+        .item4{
+            grid-area: D;
+            background-color:#fff;
+        }
+        
+        .item5{
+            grid-area: E;
+            background-color:mediumslateblue;
+        }
+        
+        .item6{
+            grid-area: F;
+            background-color: springgreen;
+        }
+
+        .item7{
+            grid-area: G;
+            background-color: #d6b06a;
+        }
+
+        .item8{
+            grid-area: H;
+            background-color: darkcyan;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+</body>
+</html>
