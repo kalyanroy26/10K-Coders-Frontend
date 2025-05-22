@@ -100,7 +100,7 @@ a{
     background-position: center;
     min-height: 90vh;
     border-radius: 2px;
-    gap: 3rem;
+    gap: 5rem;
     font-size: 3.5rem;
     font-weight: 900;
     color: #F7F7F7;
@@ -201,6 +201,44 @@ a{
     color: #F7F7F7;
     margin-top: 1rem;
 }
+
+#animated-gif{
+    animation: float 1s ease-in-out 0.5s infinite alternate both;
+    cursor: pointer;
+} 
+
+#animated-gif:hover{
+    animation-play-state: paused;
+}
+
+.hero h2{
+    animation: fade_in 0.7s ease-in-out 0.5s 1 alternate both;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fade_in {
+    0%{
+        /* transform: translateX(200px); */
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    
+    100%{
+        /* transform: translateX(50px); */
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 
 @media(width<=576px){
     .navbar{
